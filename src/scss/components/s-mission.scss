@@ -1,0 +1,199 @@
+.s-mission {
+  &__main {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 70px 30px;
+    background-color: var(--primary);
+    color: white;
+    overflow: hidden;
+    border-radius: 24px;
+    text-align: center;
+    z-index: 1;
+
+    @include laptop-min {
+      padding: 50px 30px;
+    }
+    @include tablet {
+      padding: 30px 20px;
+    }
+  }
+  &__main-pattern {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: none;
+    z-index: -1;
+
+    @include tablet {
+      width: 1600px;
+    }
+  }
+  &__main-tag {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 120%;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    @include tablet {
+      font-size: 20px;
+      margin-bottom: 25px;
+    }
+    @include tablet-min {
+      font-size: 18px;
+    }
+  }
+  &__main-title {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 120%;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    max-width: 790px;
+    margin: 0px 0px 50px 0px;
+    @include laptop-min {
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+    @include tablet-min {
+      font-size: 28px;
+      margin-bottom: 0;
+    }
+  }
+  &__main-circle {
+    @include flex-center;
+    width: 545px;
+    height: 235px;
+    max-width: 100%;
+    background: url("@img/mission-circle.png") center / 100% auto no-repeat;
+
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 130%;
+
+    @include tablet {
+      font-size: 24px;
+    }
+    @include tablet-min {
+      font-size: 20px;
+    }
+
+    span {
+      max-width: 455px;
+      @include tablet {
+        max-width: 90%;
+      }
+      @include tablet-min {
+        max-width: 80%;
+      }
+    }
+  }
+  &__purpose {
+    margin-top: 70px;
+    @include laptop-min {
+      margin-top: 50px;
+    }
+    @include tablet {
+      margin-top: 30px;
+    }
+  }
+  &__purpose-title {
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 120%;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    text-align: center;
+    max-width: 1010px;
+    margin: 0 auto 70px auto;
+
+    @include laptop-min {
+      font-size: 40px;
+      margin-bottom: 45px;
+    }
+    @include tablet {
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+    @include tablet-min {
+      font-size: 28px;
+    }
+
+    span {
+      color: var(--primary);
+    }
+  }
+  &__purpose-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    @include laptop {
+      gap: 20px;
+      row-gap: 30px;
+    }
+    @include laptop-middle {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include tablet-min {
+      gap: 15px;
+      row-gap: 30px;
+    }
+  }
+  &__purpose-item {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    aspect-ratio: 1/1.12;
+
+    @include hover {
+      img {
+        transform: scale(1.08);
+      }
+    }
+
+    &:nth-child(8n),
+    &:first-child {
+      box-shadow: -15px -15px 0 0 var(--blue);
+    }
+    &:nth-child(3n) {
+      box-shadow: 15px 15px 0 0 var(--red);
+    }
+    &:nth-child(even) {
+      transform: translateY(45px);
+    }
+
+    @include laptop {
+      &:nth-child(8n),
+      &:first-child {
+        box-shadow: -10px -10px 0 0 var(--blue);
+      }
+      &:nth-child(3n) {
+        box-shadow: 10px 10px 0 0 var(--red);
+      }
+    }
+    @include tablet {
+      aspect-ratio: 1/1.14;
+    }
+
+    @media (min-width: 1366px) {
+      &:nth-child(even) {
+        transform: translateY(75px);
+      }
+    }
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+      display: block;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.3s linear;
+    }
+  }
+}

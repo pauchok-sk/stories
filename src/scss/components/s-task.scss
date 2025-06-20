@@ -1,0 +1,63 @@
+.s-task {
+  &__title {
+    text-align: center;
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 40px;
+    border-radius: 24px;
+    background-color: var(--wood);
+    @include desktop {
+      grid-column: 2 span;
+    }
+    @include tablet {
+      grid-column: 4 span;
+      padding: 30px 25px;
+    }
+  }
+  &__item-head {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+  &__item-num {
+    @include flex-center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    background-color: var(--red);
+
+    font-size: 26px;
+    line-height: 90%;
+    color: var(--white);
+
+    @include tablet {
+      font-size: 22px;
+    }
+  }
+  &__item-title {
+    font-size: 19px;
+    line-height: 110%;
+    margin: 0;
+    @include tablet {
+      font-size: 18px;
+    }
+  }
+  &__item-content {
+    font-size: 19px;
+    line-height: 130%;
+    margin: 0;
+    @include tablet {
+      font-size: 18px;
+    }
+  }
+}

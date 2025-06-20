@@ -1,0 +1,9 @@
+.sect-m {
+  margin: 150px 0px;
+  @include laptop-middle {
+    margin: 100px 0px;
+  }
+  @include laptop-min {
+    margin: 70px 0px;
+  }
+}

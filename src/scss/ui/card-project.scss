@@ -1,0 +1,49 @@
+.card-project {
+  display: flex !important;
+  flex-direction: column;
+  height: auto !important;
+  background-color: var(--ecru);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: color 0.2s ease;
+  @include hover {
+    color: var(--primary);
+  }
+  &__gallery {
+    position: relative;
+    width: 100%;
+    padding-bottom: 75%;
+
+    img {
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      top: 0;
+      left: 0;
+    }
+  }
+  &__body {
+    padding: 30px;
+    flex: 1;
+    @include laptop-min {
+      padding: 20px;
+    }
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 130%;
+    margin: 0;
+    @include desktop {
+      font-size: 22px;
+    }
+    @include laptop-middle {
+      font-size: 20px;
+    }
+    @include laptop-min {
+      font-size: 18px;
+    }
+  }
+}

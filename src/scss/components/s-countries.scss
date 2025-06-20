@@ -1,0 +1,33 @@
+.s-countries {
+  &__title {
+    max-width: 1345px;
+  }
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    @include laptop-middle {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include tablet-min {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  }
+  &__item {
+    padding-top: 20px;
+    border-top: 6px solid var(--blue);
+    @include tablet {
+      padding-top: 15px;
+      border-width: 3px;
+    }
+  }
+  &__list {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+    @include tablet {
+      font-size: 20px;
+    }
+  }
+}

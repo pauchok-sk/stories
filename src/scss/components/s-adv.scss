@@ -1,0 +1,47 @@
+.s-adv {
+  &__wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+    @include laptop-min {
+      flex-direction: column;
+    }
+  }
+  &__item {
+    @include flex-center;
+    flex-direction: column;
+    text-align: center;
+    gap: 5px;
+    width: 385px;
+    max-width: 100%;
+    min-height: 285px;
+
+    color: var(--white);
+
+    @include laptop-min {
+      min-height: 245px;
+    }
+  }
+  &__item-num {
+    font-weight: 500;
+    font-size: 78px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    @include laptop-middle {
+      font-size: 54px;
+    }
+    @include laptop-min {
+      font-size: 44px;
+    }
+  }
+  &__item-content {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 130%;
+    @include laptop-middle {
+      font-size: 20px;
+    }
+  }
+}

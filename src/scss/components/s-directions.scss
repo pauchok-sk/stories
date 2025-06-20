@@ -1,0 +1,95 @@
+.s-directions {
+  margin-top: 100px;
+  @include laptop-min {
+    margin-top: 70px;
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    @include laptop-middle {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  &__title {
+    max-width: 1300px;
+  }
+  &__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    gap: 20px;
+    padding: 25px;
+    min-height: 390px;
+    border-radius: 20px;
+    color: white;
+    z-index: 1;
+
+    &:first-child {
+      box-shadow: -15px 15px 0 0 #ff4c54;
+    }
+    &:last-child {
+      box-shadow: 15px -15px 0 0 #99bffc;
+    }
+
+    @include desktop {
+      min-height: 300px;
+    }
+    @include laptop-middle {
+      &:first-child {
+        box-shadow: -10px 10px 0 0 #ff4c54;
+      }
+      &:last-child {
+        box-shadow: 10px -10px 0 0 #99bffc;
+      }
+    }
+    @include tablet {
+      padding: 20px 15px;
+      grid-column: 2 span;
+    }
+    @include mobile {
+      min-height: 270px;
+    }
+    &::before {
+      position: absolute;
+      content: "";
+      inset: 0;
+      background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.2) 100%
+      );
+      z-index: -1;
+    }
+  }
+  &__item-circle {
+    @include flex-center;
+    width: 52px;
+    height: 52px;
+    background-color: white;
+    border-radius: 50%;
+
+    img {
+      display: block;
+      width: 26px;
+    }
+  }
+  &__item-title {
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    margin: 0;
+    @include desktop {
+      font-size: 32px;
+    }
+    @include tablet {
+      font-size: 24px;
+    }
+    @include mobile {
+      font-size: 20px;
+    }
+  }
+}

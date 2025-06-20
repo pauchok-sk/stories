@@ -1,0 +1,23 @@
+._oswald {
+  font-family: "Oswald", sans-serif;
+}
+
+.content {
+  font-size: 20px;
+  line-height: 140%;
+  margin: 0;
+
+  @include tablet {
+    font-size: 18px;
+  }
+
+  p {
+    margin: 0;
+    &:not(:last-child) {
+      margin-bottom: 24px;
+      @include tablet {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
