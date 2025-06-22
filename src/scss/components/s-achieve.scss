@@ -1,0 +1,111 @@
+.s-achieve {
+  overflow: hidden;
+  &__slider {
+    overflow: visible !important;
+  }
+  &__slide {
+    width: fit-content !important;
+    box-sizing: border-box;
+    padding-top: 160px;
+    padding-left: 100px;
+    max-width: 100%;
+    z-index: 1;
+    @include laptop {
+      padding-left: 0;
+      width: 100% !important;
+    }
+    @include laptop-middle {
+      padding-top: 140px;
+    }
+    @include tablet {
+      padding-top: 115px;
+    }
+    @include tablet-min {
+      padding-top: 95px;
+    }
+    @include mobile {
+      padding-top: 60px;
+    }
+  }
+  &__slide-wrapper {
+    display: flex;
+    max-width: 1260px;
+    gap: 30px;
+    @include laptop-min {
+      gap: 20px;
+    }
+    @include tablet {
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+  }
+  &__slide-year {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+
+    color: var(--car);
+    font-weight: 500;
+    font-size: 200px;
+    line-height: 110%;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+
+    @include laptop-middle {
+      font-size: 150px;
+    }
+    @include tablet {
+      font-size: 122px;
+    }
+    @include tablet {
+      font-size: 102px;
+    }
+    @include mobile {
+      font-size: 64px;
+    }
+  }
+  &__slide-item {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: auto;
+    min-height: 300px;
+    padding: 40px;
+    border-radius: 24px;
+    background-color: var(--wood);
+    @include laptop-middle {
+      padding: 25px;
+      min-height: 250px;
+    }
+    @include laptop-min {
+      min-height: 200px;
+      padding: 20px;
+    }
+    @include tablet {
+      flex: none;
+      width: 100%;
+      min-height: auto;
+    }
+  }
+  &__slide-circle {
+    @include flex-center;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    margin-bottom: 25px;
+  }
+  &__slide-content {
+    margin: auto 0px 0px 0px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+    @include laptop-middle {
+      font-size: 18px;
+    }
+    @include laptop-min {
+      font-size: 16px;
+    }
+  }
+}
