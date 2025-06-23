@@ -22,7 +22,44 @@
     font-size: 32px;
   }
 
+  &._center {
+    text-align: center;
+  }
+
   span {
     color: var(--primary);
+  }
+}
+
+.m-title {
+  font-weight: 500;
+  font-size: 76px;
+  line-height: 110%;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  margin: 0px 0px 70px 0px;
+
+  @include laptop-middle {
+    font-size: 64px;
+  }
+  @include laptop-min {
+    font-size: 52px;
+    margin-bottom: 50px;
+  }
+  @include tablet {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+  @include tablet-min {
+    font-size: 32px;
+  }
+
+  span {
+    color: var(--primary);
+  }
+
+  &._center {
+    text-align: center;
   }
 }

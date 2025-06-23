@@ -1,0 +1,52 @@
+.s-res {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    @include tablet {
+      gap: 25px;
+    }
+  }
+  &__item {
+    display: flex;
+    align-items: start;
+    gap: 30px;
+    @include tablet {
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+  }
+  &__year {
+    position: sticky;
+    top: 120px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    flex: 0 0 355px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 110%;
+
+    @include laptop-min {
+      font-size: 24px;
+      gap: 15px;
+      flex-basis: 250px;
+    }
+    @include tablet {
+      width: 100%;
+      position: static;
+    }
+  
+    &::before {
+      content: "";
+      flex-shrink: 0;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background-color: var(--primary);
+    }
+  }
+  &__item-content {
+    flex: 0 1 1215px;
+  }
+}
