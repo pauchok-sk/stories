@@ -1,0 +1,12 @@
+.s-stars {
+  overflow: hidden;
+  &__slider {
+    overflow: visible !important;
+    .card-star {
+      width: 400px !important;
+      @include tablet {
+        width: 320px !important;
+      }
+    }
+  }
+}

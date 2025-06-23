@@ -1,0 +1,15 @@
+.s-partners {
+  overflow: hidden;
+  &__slider {
+    overflow: visible !important;
+
+    .swiper-slide {
+      width: 200px !important;
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

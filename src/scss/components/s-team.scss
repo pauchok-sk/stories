@@ -1,0 +1,16 @@
+.s-team {
+  overflow: hidden;
+  &__title {
+    text-align: center;
+  }
+  &__slider {
+    overflow: visible !important;
+
+    .card-team {
+      width: 360px !important;
+      @include tablet {
+        width: 320px !important;
+      }
+    }
+  }
+}

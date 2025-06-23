@@ -14,6 +14,9 @@
 @import "./ui/classes";
 @import "./ui/card-project";
 @import "./ui/slider";
+@import "./ui/card-team";
+@import "./ui/card-new";
+@import "./ui/card-star";
 
 // components
 @import "./components/header";
@@ -28,5 +31,9 @@
 @import "./components/s-projects";
 @import "./components/s-achieve";
 @import "./components/s-help";
+@import "./components/s-team";
+@import "./components/s-news";
+@import "./components/s-stars";
+@import "./components/s-partners";
 
 @import "./components/footer";

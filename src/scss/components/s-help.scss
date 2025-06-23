@@ -1,0 +1,92 @@
+.s-help {
+  &__body {
+    color: var(--white);
+    background: url('@img/help-circle.png') top -105px left -280px / 1295px auto no-repeat;
+    background-color: var(--primary);
+    border-radius: 24px;
+    padding: 100px 125px 80px 125px;
+    @include desktop {
+      padding: 70px 80px;
+    }
+    @include laptop-middle {
+      padding: 30px;
+    }
+    @include tablet-min {
+      padding: 25px 15px;
+    }
+  }
+  &__quote {
+    font-size: 50px;
+    line-height: 120%;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    @include laptop {
+      font-size: 42px;
+    }
+    @include laptop-middle {
+      font-size: 32px;
+    }
+    @include tablet-min {
+      font-size: 26px;
+    }
+  }
+  &__author {
+    width: fit-content;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 130%;
+    margin: 10px 0px 0px auto;
+    @include laptop-middle {
+      font-size: 24px;
+    }
+    @include tablet-min {
+      font-size: 20px;
+    }
+  }
+  &__appeal-title {
+    margin-top: 24px;
+    margin-bottom: 60px;
+    font-size: 22px;
+    line-height: 120%;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    @include laptop-middle {
+      font-size: 18px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+  }
+  &__appeal-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    @include laptop-middle {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  &__appeal-avatar {
+    width: 500px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  &__appeal-info {
+    flex: 0 1 860px;
+    @include laptop-middle {
+      flex: none;
+      width: 100%;
+    }
+  }
+  &__content {
+    font-weight: 500;
+    line-height: 130%;
+  }
+  &__appeal-author {
+    width: fit-content;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    margin: 20px 0px 0px auto;
+  }
+}
