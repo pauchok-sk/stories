@@ -1,0 +1,6 @@
+.page-head {
+  margin: 70px 0px;
+  @include tablet {
+    margin: 50px 0px;
+  }
+}

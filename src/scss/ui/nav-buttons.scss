@@ -1,0 +1,46 @@
+.nav-buttons {
+  display: flex;
+  border-radius: 100px;
+  overflow: hidden;
+  margin-bottom: 70px;
+  @include laptop-min {
+    margin-bottom: 50px;
+  }
+  @include tablet {
+    flex-wrap: wrap;
+    border-radius: 24px;
+    margin-bottom: 30px;
+  }
+  &__item {
+    @include flex-center;
+    min-height: 100px;
+    background-color: var(--primary);
+    flex: 1;
+    padding: 10px;
+
+    color: var(--white);
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 110%;
+    text-align: center;
+
+    transition: background-color .2s ease;
+
+    @include hover {
+      background-color: var(--primary-l);
+    }
+    @include laptop-middle {
+      min-height: 80px;
+      font-size: 24px;
+    }
+    @include tablet {
+      flex: none;
+      width: 100%;
+      min-height: 60px;
+      font-size: 20px;
+    }
+    &._active {
+      background-color: var(--primary-l);
+    }
+  }
+}

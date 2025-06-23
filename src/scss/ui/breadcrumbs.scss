@@ -1,7 +1,9 @@
 .aioseo-breadcrumbs {
   @include flex-center;
+  flex-wrap: wrap;
   gap: 10px;
   margin-bottom: 20px;
+  text-align: center;
 }
 .aioseo-breadcrumb {
   font-size: 16px;

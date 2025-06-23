@@ -1,0 +1,37 @@
+.s-article {
+  margin-top: 0 !important;
+  &__wrapper {
+    display: flex;
+    align-items: start;
+    gap: 60px;
+    @include laptop {
+      gap: 30px;
+    }
+    @include laptop-min {
+      flex-wrap: wrap;
+    }
+  }
+  &__gallery {
+    position: sticky;
+    top: 120px;
+    flex: 1;
+    @include laptop-min {
+      flex: none;
+      width: 100%;
+      position: static;
+    }
+  }
+  &__info {
+    flex: 1;
+    @include laptop-min {
+      flex: none;
+      width: 100%;
+    }
+  }
+  &__date {
+    font-size: 16px;
+    line-height: 140%;
+    opacity: 0.5;
+    margin-top: 30px;
+  }
+}
