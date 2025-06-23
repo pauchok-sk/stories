@@ -20,6 +20,16 @@
       }
     }
   }
+  ul {
+    padding-left: 25px;
+    margin: 0;
+    &:not(:last-child) {
+      margin-bottom: 24px;
+      @include tablet {
+        margin-bottom: 20px;
+      }
+    }
+  }
 }
 
 .sect-head {

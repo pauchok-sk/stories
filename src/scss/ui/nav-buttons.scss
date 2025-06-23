@@ -13,6 +13,7 @@
   }
   &__item {
     @include flex-center;
+    cursor: pointer;
     min-height: 100px;
     background-color: var(--primary);
     flex: 1;

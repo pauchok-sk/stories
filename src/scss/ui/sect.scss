@@ -6,4 +6,8 @@
   @include laptop-min {
     margin: 70px 0px;
   }
+
+  &._off-top {
+    margin-top: 0;
+  }
 }

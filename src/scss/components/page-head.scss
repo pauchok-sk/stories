@@ -1,6 +1,9 @@
 .page-head {
-  margin: 70px 0px;
+  margin: 50px 0px 70px 0px;
   @include tablet {
-    margin: 50px 0px;
+    margin: 30px 0px 50px 0px;
+  }
+  @include mobile {
+    margin-top: 40px;
   }
 }
