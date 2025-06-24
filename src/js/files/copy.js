@@ -2,24 +2,26 @@ export default function copy() {
   const buttons = document.querySelectorAll("[data-copy-btn]");
 
   if (buttons.length) {
-    buttons.forEach(btn => {
+    buttons.forEach((btn) => {
       btn.addEventListener("click", () => {
         const id = btn.dataset.copyBtn;
+        const text = btn.textContent;
         const el = document.querySelector(`[data-copy="${id}"]`);
 
-        console.log(el)
+        copyTextToClipboard(el.textContent).then(() => {
+          btn.textContent = "Скопировано";
 
-        copyTextToClipboard(el.textContent);
-      })
-    })
+          setTimeout(() => btn.textContent = text);
+        });
+      });
+    });
   }
 }
 
 async function copyTextToClipboard(text) {
   try {
     await navigator.clipboard.writeText(text);
-    console.log('Текст скопирован: ' + text);
   } catch (err) {
-    console.error('Ошибка при копировании: ', err);
+    console.error("Ошибка при копировании: ", err);
   }
 }

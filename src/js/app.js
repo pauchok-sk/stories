@@ -2,6 +2,7 @@ import "../scss/style.scss";
 import burger from "./files/burger.js";
 import copy from "./files/copy.js";
 import headerScroll from "./files/headerScroll.js";
+import map from "./files/map.js";
 import slides from "./files/slides.js";
 import spoller from "./files/spoller.js";
 import tabs from "./files/tabs.js";
@@ -12,5 +13,6 @@ burger();
 slides();
 tabs();
 copy();
+map();
 
 Fancybox.bind("[data-fancybox]", {});

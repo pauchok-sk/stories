@@ -41,16 +41,18 @@
         if (buttons.length) buttons.forEach(btn => {
             btn.addEventListener("click", () => {
                 const id = btn.dataset.copyBtn;
+                const text = btn.textContent;
                 const el = document.querySelector(`[data-copy="${id}"]`);
-                console.log(el);
-                copyTextToClipboard(el.textContent);
+                copyTextToClipboard(el.textContent).then(() => {
+                    btn.textContent = "Скопировано";
+                    setTimeout(() => btn.textContent = text);
+                });
             });
         });
     }
     async function copyTextToClipboard(text) {
         try {
             await navigator.clipboard.writeText(text);
-            console.log("Текст скопирован: " + text);
         } catch (err) {
             console.error("Ошибка при копировании: ", err);
         }
@@ -61,6 +63,30 @@
             let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
             if (scrollTop > 0) header.classList.add("_scroll"); else header.classList.remove("_scroll");
         });
+    }
+    function map() {
+        const contactsMap = document.querySelector("#map");
+        if (contactsMap) {
+            function init() {
+                const center = JSON.parse(contactsMap.dataset.center);
+                const zoom = Number(contactsMap.dataset.zoom);
+                const map = new ymaps.Map("map", {
+                    center,
+                    zoom
+                });
+                const placemark = new ymaps.Placemark(center, {}, {});
+                map.controls.remove("geolocationControl");
+                map.controls.remove("searchControl");
+                map.controls.remove("trafficControl");
+                map.controls.remove("typeSelector");
+                map.controls.remove("fullscreenControl");
+                map.controls.remove("zoomControl");
+                map.controls.remove("rulerControl");
+                map.behaviors.disable([ "scrollZoom" ]);
+                map.geoObjects.add(placemark);
+            }
+            ymaps.ready(init);
+        }
     }
     function slides() {
         const achieveSlider = document.querySelector(".s-achieve__slider");
@@ -359,5 +385,6 @@
     slides();
     tabs();
     copy();
+    map();
     Fancybox.bind("[data-fancybox]", {});
 })();
