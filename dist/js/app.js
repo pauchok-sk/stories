@@ -45,7 +45,7 @@
                 const el = document.querySelector(`[data-copy="${id}"]`);
                 copyTextToClipboard(el.textContent).then(() => {
                     btn.textContent = "Скопировано";
-                    setTimeout(() => btn.textContent = text);
+                    setTimeout(() => btn.textContent = text, 1e3);
                 });
             });
         });
