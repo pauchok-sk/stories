@@ -15,4 +15,7 @@ tabs();
 copy();
 map();
 
-Fancybox.bind("[data-fancybox]", {});
+Fancybox.bind("[data-fancybox]", {
+  closeButton: false,
+});
+Fancybox.show([{ src: "#modal-help", type: "inline" }]);

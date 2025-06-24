@@ -22,6 +22,7 @@
 @import "./ui/card-press";
 @import "./ui/tab";
 @import "./ui/card-help";
+@import "./ui/form";
 
 // components
 @import "./components/header";
@@ -52,5 +53,7 @@
 @import "./components/s-map";
 @import "./components/s-documents";
 @import "./components/s-archive-projects";
+@import "./components/modals";
+@import "./components/pay";
 
 @import "./components/footer";
