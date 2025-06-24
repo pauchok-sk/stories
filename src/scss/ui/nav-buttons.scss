@@ -34,11 +34,13 @@
       min-height: 80px;
       font-size: 24px;
     }
+    @include laptop-min {
+      font-size: 18px;
+    }
     @include tablet {
       flex: none;
       width: 100%;
       min-height: 60px;
-      font-size: 20px;
     }
     &._active {
       background-color: var(--primary-l);
