@@ -1,0 +1,25 @@
+.s-archive-partners {
+  &__partners {
+    @include flex-center;
+    flex-wrap: wrap;
+    gap: 65px;
+    row-gap: 70px;
+    @include desktop {
+      gap: 40px;
+    }
+    @include laptop-min {
+      gap: 30px;
+    }
+    @include tablet {
+      gap: 20px;
+    }
+
+    img {
+      display: block;
+      width: 200px;
+      @include tablet {
+        width: 150px;
+      }
+    }
+  }
+}

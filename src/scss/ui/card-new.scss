@@ -4,7 +4,7 @@
   background-color: var(--ecru);
   border-radius: 20px;
   overflow: hidden;
-  transition: color .2s ease;
+  transition: color 0.2s ease;
   @include hover {
     color: var(--primary);
     .card-new__btn {
@@ -44,7 +44,7 @@
     font-size: 24px;
     line-height: 130%;
     margin: 0px 0px 20px 0px;
-    
+
     @include desktop {
       font-size: 20px;
     }
@@ -69,13 +69,45 @@
     color: var(--primary);
 
     @include laptop-min {
-      font-size: 18px;
+      font-size: 16px;
     }
 
     svg {
       width: 25px;
       height: 11px;
-      transition: transform .2s ease;
+      transition: transform 0.2s ease;
+      @include laptop-min {
+        width: 20px;
+      }
+    }
+  }
+  &__footer {
+    @include flex-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    @include laptop-min {
+      gap: 15px;
+    }
+  }
+
+  &__download {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 20px;
+    line-height: 130%;
+
+    @include laptop-min {
+      font-size: 16px;
+    }
+
+    svg {
+      width: 20px;
+      height: 23px;
+      @include laptop-min {
+        width: 15px;
+      }
     }
   }
 }

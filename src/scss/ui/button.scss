@@ -6,3 +6,22 @@
   padding: 0;
   color: inherit;
 }
+
+.btn-s {
+  @include flex-center;
+  cursor: pointer;
+  padding: 16px 28px;
+  background-color: var(--primary);
+  border-radius: 8px;
+  border: none;
+
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  line-height: 130%;
+
+  transition: background-color .2s ease;
+  @include hover {
+    background-color: var(--primary-l);
+  }
+}

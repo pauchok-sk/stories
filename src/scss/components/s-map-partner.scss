@@ -1,0 +1,18 @@
+.s-map-partner {
+  &__content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  &__btn {
+    margin: 70px auto 0 auto;
+    @include laptop-min {
+      margin-top: 50px;
+    }
+    @include tablet {
+      margin-top: 30px;
+    }
+    @include mobile {
+      width: 100%;
+    }
+  }
+}

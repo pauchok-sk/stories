@@ -121,9 +121,11 @@
   @include laptop {
     grid-template-columns: repeat(3, 1fr);
   }
-  @include tablet {
-    grid-template-columns: repeat(2, 1fr);
+  @include laptop-min {
     gap: 20px;
+  }
+  @media (max-width: 800px) {
+    grid-template-columns: repeat(2, 1fr);
   }
   @include tablet-min {
     grid-template-columns: 1fr;
