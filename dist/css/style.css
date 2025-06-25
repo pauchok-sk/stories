@@ -417,6 +417,12 @@ body {
   overflow: hidden;
   transition: color .2s ease
 }
+.card-new._newspaper .card-new__title {
+  transition: color .2s ease
+}
+.card-new._newspaper .card-new__download {
+  transition: color .2s ease
+}
 .card-new__gallery {
   position: relative;
   width: 100%;
@@ -2937,12 +2943,22 @@ textarea.input-control {
   .card-project:hover {
     color: var(--primary)
   }
-  .card-new:hover {
+  a.card-new:hover {
     color: var(--primary)
   }
-  .card-new:hover .card-new__btn svg {
+  a.card-new:hover .card-new__btn svg {
     -webkit-transform: translateX(6px);
     transform: translateX(6px)
+  }
+  .card-new._newspaper .card-new__title:hover {
+    color: var(--primary)
+  }
+  .card-new._newspaper .card-new__btn:hover svg {
+    -webkit-transform: translateX(6px);
+    transform: translateX(6px)
+  }
+  .card-new._newspaper .card-new__download:hover {
+    color: var(--primary)
   }
   .aioseo-breadcrumb a:hover {
     color: var(--primary)
@@ -3031,12 +3047,22 @@ textarea.input-control {
   .card-project:active {
     color: var(--primary)
   }
-  .card-new:active {
+  a.card-new:active {
     color: var(--primary)
   }
-  .card-new:active .card-new__btn svg {
+  a.card-new:active .card-new__btn svg {
     -webkit-transform: translateX(6px);
     transform: translateX(6px)
+  }
+  .card-new._newspaper .card-new__title:active {
+    color: var(--primary)
+  }
+  .card-new._newspaper .card-new__btn:active svg {
+    -webkit-transform: translateX(6px);
+    transform: translateX(6px)
+  }
+  .card-new._newspaper .card-new__download:active {
+    color: var(--primary)
   }
   .aioseo-breadcrumb a:active {
     color: var(--primary)

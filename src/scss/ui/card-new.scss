@@ -1,10 +1,4 @@
-.card-new {
-  display: flex;
-  flex-direction: column;
-  background-color: var(--ecru);
-  border-radius: 20px;
-  overflow: hidden;
-  transition: color 0.2s ease;
+a.card-new {
   @include hover {
     color: var(--primary);
     .card-new__btn {
@@ -13,6 +7,38 @@
       }
     }
   }
+}
+
+.card-new {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--ecru);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: color 0.2s ease;
+
+  &._newspaper {
+    .card-new__title {
+      transition: color 0.2s ease;
+      @include hover {
+        color: var(--primary);
+      }
+    }
+    .card-new__btn {
+      @include hover {
+        svg {
+          transform: translateX(6px);
+        }
+      }
+    }
+    .card-new__download {
+      transition: color .2s ease;
+      @include hover {
+        color: var(--primary);
+      }
+    }
+  }
+
   &__gallery {
     position: relative;
     width: 100%;
