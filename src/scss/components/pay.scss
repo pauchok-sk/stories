@@ -1,9 +1,15 @@
 .pay {
   margin-top: 50px;
+  @include laptop-min {
+    margin-top: 30px;
+  }
   &__tabs-nav {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    @include laptop-min {
+      grid-template-columns: 1fr;
+    }
   }
   &__tab-btn {
     display: flex;
@@ -26,6 +32,9 @@
       background-color: var(--primary);
       color: white;
     }
+    @include laptop-min {
+      padding: 15px;
+    }
 
     &._active {
       pointer-events: none;
@@ -41,8 +50,11 @@
       background-color: var(--ecru);
     }
   }
-  &__form {
+  &__wrapper {
     margin-top: 50px;
+    @include laptop-min {
+      margin-top: 30px;
+    }
   }
   &__form-item {
     margin-bottom: 50px;
@@ -54,7 +66,185 @@
     margin-bottom: 30px;
   }
   &__form-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    @include tablet {
+      gap: 20px;
+    }
   }
   &__form-checkbox {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    @include tablet {
+      gap: 15px;
+    }
+
+    .input-control {
+      flex: 1;
+      white-space: nowrap;
+      width: fit-content !important;
+    }
+  }
+  &__form-comments {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    .input-control {
+      &:last-child {
+        grid-column: 3 span;
+      }
+      @include laptop-min {
+        grid-column: 3 span;
+      }
+    }
+  }
+  &__form-item-content {
+    font-size: 15px;
+    line-height: 140%;
+    opacity: 0.5;
+    margin: 20px 0px 0px 0px;
+  }
+  &__form-footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding-top: 50px;
+    border-top: 1px solid var(--primary);
+  }
+  &__footer-item {
+    @include tablet {
+      grid-column: 2 span;
+    }
+  }
+  &__footer-title {
+    font-size: 18px;
+    line-height: 140%;
+    opacity: 0.7;
+    margin-bottom: 5px;
+
+    @include tablet {
+      font-size: 16px;
+    }
+  }
+  &__footer-content {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 130%;
+    @include tablet {
+      font-size: 20px;
+    }
+  }
+  &__requisites {
+  }
+  &__requisites-item {
+    margin-bottom: 50px;
+    @include tablet {
+      margin-bottom: 30px;
+    }
+  }
+  &__requisites-head {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  &__requisites-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 130%;
+    @include tablet {
+      font-size: 18px;
+    }
+  }
+  &__requisites-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    li {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      font-size: 20px;
+      line-height: 130%;
+      &:not(:last-child) {
+        padding-bottom: 10px;
+        border-bottom: 1px solid var(--primary);
+      }
+
+      @include tablet {
+        grid-template-columns: 1fr;
+        font-size: 18px;
+      }
+    }
+
+    span {
+      &:first-child {
+        opacity: 0.5;
+      }
+    }
+  }
+  &__requisites-btn {
+    width: 100%;
+  }
+  &__qr {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    @include tablet {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  &__qr-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    @include tablet {
+      width: 100%;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      font-size: 20px;
+      line-height: 140%;
+      @include tablet {
+        font-size: 18px
+      }
+      div {
+        @include flex-center;
+        border-radius: 50%;
+        border: 1px solid var(--primary);
+        flex-shrink: 0;
+        width: 50px;
+        height: 50px;
+
+        font-size: 20px;
+        line-height: 140%;
+        color: var(--primary);
+        @include tablet {
+          font-size: 18px;
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+  }
+  &__qr-wrapper {
+    width: 240px;
+    max-width: 100%;
+    flex-shrink: 0;
+  }
+  &__qr-img {
+    display: block;
+    width: 100%;
+    height: auto;
   }
 }

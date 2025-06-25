@@ -1,0 +1,484 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Счастливые истории</title>
+	<meta charset="UTF-8" />
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap&_v=20250625142019" rel="stylesheet" />
+	<link rel="stylesheet" href="./files/css/fancybox.min.css?_v=20250625142019">
+	<link rel="stylesheet" href="./files/css/swiper.min.css?_v=20250625142019">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250625142019" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body class="body">
+	<header class="header">
+		<div class="container">
+			<div class="header__body">
+				<div class="header__col">
+					<ul class="list header__list">
+						<li><a href="#">О фонде</a></li>
+						<li><a href="#">Проекты</a></li>
+						<li><a href="#">Благодарности</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">Мероприятия</a></li>
+						<li><a href="#">Корпоративная газета</a></li>
+					</ul>
+				</div>
+				<a href="#" class="header__logo">
+					<img src="img/logo.svg" alt="logo" />
+				</a>
+				<div class="header__col">
+					<ul class="list header__list">
+						<li><a href="#">Документы</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+					<ul class="list header__list _contacts">
+						<li>
+							<a href="mailto:fond-happystories@mail.ru">fond-happystories@mail.ru</a>
+						</li>
+						<li><a href="tel:+78435610612">+7 843 561-06-12</a></li>
+					</ul>
+					<div class="header__contacts">
+						<a href="mailto:fond-happystories@mail.ru" class="header__contacts-btn _mail">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-mail"></use>
+							</svg>
+						</a>
+						<a href="tel:+78435610612" class="header__contacts-btn _tel">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-tel"></use>
+							</svg>
+						</a>
+					</div>
+					<a href="#" class="header__btn">Пожертвовать</a>
+				</div>
+				<div class="header__burger-btn" id="burger-open">
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="burger-overlay" id="burger-overlay"></div>
+	<div class="burger" id="burger">
+		<div class="burger__head">
+			<a href="#" class="burger__logo">
+				<img src="img/logo.svg" alt="logo" />
+			</a>
+			<div class="burger__close" id="burger-close">
+				<div></div>
+				<div></div>
+			</div>
+		</div>
+		<div class="burger__nav">
+			<ul class="list burger__list">
+				<li><a href="#">О фонде</a></li>
+				<li><a href="#">Проекты</a></li>
+				<li><a href="#">Благодарности</a></li>
+				<li><a href="#">Новости</a></li>
+				<li><a href="#">Мероприятия</a></li>
+				<li><a href="#">Корпоративная газета</a></li>
+				<li><a href="#">Документы</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+			<ul class="list burger__list">
+				<li>
+					<a href="mailto:fond-happystories@mail.ru">fond-happystories@mail.ru</a>
+				</li>
+				<li><a href="tel:+7 843 561-06-12">+7 843 561-06-12</a></li>
+			</ul>
+		</div>
+		<a href="#" class="burger__btn">Пожертвовать</a>
+	</div>
+	<main>
+
+		<section class="page-head">
+			<div class="container">
+				<div class="aioseo-breadcrumbs">
+					<span class="aioseo-breadcrumb">
+						<a href="/" title="Главная">Главная</a>
+					</span>
+					<div class="aioseo-breadcrumb-separator">></div>
+					<span class="aioseo-breadcrumb"> Наши проекты </span>
+				</div>
+				<h1 class="m-title _center">Наши проекты</h1>
+			</div>
+		</section>
+
+		<section class="s-archive-projects sect-m _off-top">
+			<div class="container">
+				<div class="nav-buttons">
+					<a href="#" class="nav-buttons__item _active">Все проекты</a>
+					<a href="#" class="nav-buttons__item">Годовые отчеты</a>
+					<a href="#" class="nav-buttons__item">Культура и искусство</a>
+					<a href="#" class="nav-buttons__item">Просвещение</a>
+					<a href="#" class="nav-buttons__item">Филантропия</a>
+				</div>
+				<div class="s-archive-projects__grid">
+					<div class="card-help">
+						<div class="card-help__gallery">
+							<img src="img/direction.jpg" alt="image" />
+						</div>
+						<div class="card-help__body">
+							<h5 class="card-help__title _oswald">Культура и искусство</h5>
+							<p class="card-help__content">Помочь талантливым детям</p>
+							<div class="card-help__footer">
+								<div class="card-help__collected">
+									<div class="card-help__collected-title">Собрано</div>
+									<div class="card-help__collected-value">
+										6 579 413 <span>₽</span>
+									</div>
+								</div>
+								<div class="card-help__need">
+									<div class="card-help__need-title">Нужно</div>
+									<div class="card-help__need-value">98 375 412 <span>₽</span></div>
+								</div>
+							</div>
+							<a href="#modal-help" data-fancybox data-pay-title="Культура и искусство" data-pay-content="Помочь талантливым детям" class="btn btn-s card-help__btn">Хочу помочь</a>
+						</div>
+					</div>
+					<div class="card-help">
+						<div class="card-help__gallery">
+							<img src="img/direction.jpg" alt="image" />
+						</div>
+						<div class="card-help__body">
+							<h5 class="card-help__title _oswald">Просвещение</h5>
+							<p class="card-help__content">
+								Помочь развивать любознательность и интеллект
+							</p>
+							<div class="card-help__footer">
+								<div class="card-help__collected">
+									<div class="card-help__collected-title">Собрано</div>
+									<div class="card-help__collected-value">
+										6 579 413 <span>₽</span>
+									</div>
+								</div>
+								<div class="card-help__need">
+									<div class="card-help__need-title">Нужно</div>
+									<div class="card-help__need-value">98 375 412 <span>₽</span></div>
+								</div>
+							</div>
+							<a href="#modal-help" data-fancybox data-pay-title="Просвещение" data-pay-content="Помочь развивать любознательность и интеллект" class="btn btn-s card-help__btn">Хочу помочь</a>
+						</div>
+					</div>
+					<div class="card-help">
+						<div class="card-help__gallery">
+							<img src="img/direction.jpg" alt="image" />
+						</div>
+						<div class="card-help__body">
+							<h5 class="card-help__title _oswald">Культура и искусство</h5>
+							<p class="card-help__content">Помочь талантливым детям</p>
+							<div class="card-help__footer">
+								<div class="card-help__collected">
+									<div class="card-help__collected-title">Собрано</div>
+									<div class="card-help__collected-value">
+										6 579 413 <span>₽</span>
+									</div>
+								</div>
+								<div class="card-help__need">
+									<div class="card-help__need-title">Нужно</div>
+									<div class="card-help__need-value">98 375 412 <span>₽</span></div>
+								</div>
+							</div>
+							<a href="#modal-help" data-fancybox data-pay-title="Культура и искусство" data-pay-content="Помочь талантливым детям" class="btn btn-s card-help__btn">Хочу помочь</a>
+						</div>
+					</div>
+					<div class="card-help">
+						<div class="card-help__gallery">
+							<img src="img/direction.jpg" alt="image" />
+						</div>
+						<div class="card-help__body">
+							<h5 class="card-help__title _oswald">Просвещение</h5>
+							<p class="card-help__content">
+								Помочь развивать любознательность и интеллект
+							</p>
+							<div class="card-help__footer">
+								<div class="card-help__collected">
+									<div class="card-help__collected-title">Собрано</div>
+									<div class="card-help__collected-value">
+										6 579 413 <span>₽</span>
+									</div>
+								</div>
+								<div class="card-help__need">
+									<div class="card-help__need-title">Нужно</div>
+									<div class="card-help__need-value">98 375 412 <span>₽</span></div>
+								</div>
+							</div>
+							<a href="#modal-help" data-fancybox data-pay-title="Просвещение" data-pay-content="Помочь развивать любознательность и интеллект" class="btn btn-s card-help__btn">Хочу помочь</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+	</main>
+	<div class="modal" id="modal-help">
+		<div data-fancybox-close class="modal__close">
+			<svg>
+				<use xlink:href="img/icons/icons.svg#icon-close"></use>
+			</svg>
+		</div>
+		<h5 class="modal__title _oswald" id="pay-title"></h5>
+		<p class="modal__content" id="pay-content"></p>
+		<div class="pay tabs">
+			<div class="pay__tabs-nav">
+				<div data-tab-btn="form-pay" class="pay__tab-btn _active">
+					<div>
+						<img src="img/card.svg" alt="icon" />
+					</div>
+					<span>Онлайн перевод</span>
+				</div>
+				<div data-tab-btn="requisites" class="pay__tab-btn">
+					<div>
+						<img src="img/qr.svg" alt="icon" />
+					</div>
+					<span>Оплата по QR-коду</span>
+				</div>
+				<div data-tab-btn="qr" class="pay__tab-btn">
+					<div>
+						<img src="img/bank.svg" alt="icon" />
+					</div>
+					<span>Банковский перевод</span>
+				</div>
+			</div>
+			<div class="pay__wrapper">
+				<div data-tab="form-pay" class="_active">
+					<form action="#" class="pay__form">
+						<div class="pay__form-item">
+							<div class="pay__form-item-title">1. Сумма пожертвования</div>
+							<div class="pay__form-flex">
+								<div class="pay__form-checkbox">
+									<div class="input-control">
+										<input type="radio" name="sum-help" id="pay-500" value="500" checked class="input-check" />
+										<label for="pay-500" class="label-check">500 ₽</label>
+									</div>
+									<div class="input-control">
+										<input type="radio" name="sum-help" id="pay-1000" value="1000" class="input-check" />
+										<label for="pay-1000" class="label-check">1 000 ₽</label>
+									</div>
+									<div class="input-control">
+										<input type="radio" name="sum-help" id="pay-2500" value="2500" class="input-check" />
+										<label for="pay-2500" class="label-check">2 500 ₽</label>
+									</div>
+									<div class="input-control">
+										<input type="radio" name="sum-help" id="pay-5000" value="5000" class="input-check" />
+										<label for="pay-5000" class="label-check">5 000 ₽</label>
+									</div>
+									<div class="input-control">
+										<input type="radio" name="sum-help" id="pay-10000" value="10000" class="input-check" />
+										<label for="pay-10000" class="label-check">10 000 ₽</label>
+									</div>
+								</div>
+								<div class="input-control _value">
+									<input type="number" name="my-sum-help" id="own-sum-input" placeholder="Другая сумма" min="1" class="input" />
+									<div class="input-control__value">₽</div>
+								</div>
+							</div>
+						</div>
+						<div class="pay__form-item">
+							<div class="pay__form-item-title">2. Ваш комментарий</div>
+							<div class="pay__form-comments">
+								<div class="input-control">
+									<input type="text" name="Имя" placeholder="Имя" class="input" />
+								</div>
+								<div class="input-control">
+									<input type="tel" name="Телефон" placeholder="Телефон" class="input" />
+								</div>
+								<div class="input-control">
+									<input type="email" name="E-mail" placeholder="E-mail" class="input" />
+								</div>
+								<div class="input-control">
+									<textarea name="Комментарий или пожелания" placeholder="Комментарий или пожелания" class="input"></textarea>
+								</div>
+							</div>
+							<p class="pay__form-item-content">
+								* Указав свои данные, вы всегда сможете найти свои пожертвования
+							</p>
+						</div>
+						<div class="pay__form-footer">
+							<div class="pay__footer-item">
+								<div class="pay__footer-title">Вы жертвуете на:</div>
+								<div class="pay__footer-content" id="help-name">
+									Культура и искусство. Помочь талантливым детям
+								</div>
+							</div>
+							<div class="pay__footer-item">
+								<div class="pay__footer-title">Сумма пожертвования:</div>
+								<div class="pay__footer-content" id="help-sum">500 ₽</div>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div data-tab="requisites">
+					<div class="pay__requisites">
+						<div class="pay__requisites-item">
+							<div class="pay__requisites-head">
+								<div class="pay__requisites-title">1. Реквизиты для перевода</div>
+								<img src="img/sber.png" alt="image" />
+							</div>
+							<ul class="list pay__requisites-list">
+								<li>
+									<span>Банк</span>
+									<span>ОАО "СБЕРБАНК РОССИИ" г. Москва</span>
+								</li>
+								<li>
+									<span>Банк</span>
+									<span>ОАО "СБЕРБАНК РОССИИ" г. Москва</span>
+								</li>
+								<li>
+									<span>Банк</span>
+									<span>ОАО "СБЕРБАНК РОССИИ" г. Москва</span>
+								</li>
+								<li>
+									<span>Банк</span>
+									<span>ОАО "СБЕРБАНК РОССИИ" г. Москва</span>
+								</li>
+							</ul>
+						</div>
+						<div class="pay__requisites-item">
+							<div class="pay__requisites-head">
+								<div class="pay__requisites-title">2. Реквизиты для перевода</div>
+								<img src="img/sber.png" alt="image" />
+							</div>
+							<ul class="list pay__requisites-list">
+								<li>
+									<span>Банк</span>
+									<span>ОАО "СБЕРБАНК РОССИИ" г. Москва</span>
+								</li>
+								<li>
+									<span>Банк</span>
+									<span>ОАО "СБЕРБАНК РОССИИ" г. Москва</span>
+								</li>
+								<li>
+									<span>Банк</span>
+									<span>ОАО "СБЕРБАНК РОССИИ" г. Москва</span>
+								</li>
+								<li>
+									<span>Банк</span>
+									<span>ОАО "СБЕРБАНК РОССИИ" г. Москва</span>
+								</li>
+							</ul>
+						</div>
+						<div class="pay__requisites-item">
+							<div class="pay__requisites-head">
+								<div class="pay__requisites-title">3. Реквизиты для перевода</div>
+								<img src="img/pochta.png" alt="image" />
+							</div>
+							<div class="content">
+								<p>
+									Инструкция для перевода пожертвования в отделениях почтовой
+									связи АО «Почта России».
+								</p>
+								<p>
+									Для осуществления пожертвования через отделение почтовой связи:
+								</p>
+								<p>
+									<a href="#" download>Скачайте бланк</a> и распечатайте для
+									предъявления его оператору в отделении почтовой связи; в
+									отделении почтовой связи сообщите оператору, что хотите
+									совершить денежный перевод по номеру федерального клиента 37411
+									(уже указан в бланке), предъявив свой паспорт; оператор заполнит
+									настоящий бланк в соответствии с данными Вашего паспорта, и
+									уточнит, хотите ли Вы что-то написать в строке сообщения. Так,
+									например, можно указать фамилию подопечного фонда, для кого
+									предназначен платеж. В строку можно внести до ста символов или
+									оставить пустой; <br />
+									внесите денежные средства и получите чек об оплате. <br />
+									После этого денежные средства зачислятся на расчетный счет фонда
+									в течение 72 часов.
+								</p>
+							</div>
+						</div>
+						<a href="img/direction-icon.svg" download class="btn-s pay__requisites-btn">Скачать реквизиты</a>
+					</div>
+				</div>
+				<div data-tab="qr">
+					<div class="pay__qr">
+						<ul class="list pay__qr-list">
+							<li>
+								<div>1</div>
+								<span>Отсканируйте QR-код из мобильного приложения Вашего
+									банка.</span>
+							</li>
+							<li>
+								<div>2</div>
+								<span>Введите любую удобную для Вас сумму и подтвердите платеж.</span>
+							</li>
+						</ul>
+						<div class="pay__qr-wrapper">
+							<img src="img/qr.jpg" alt="image" class="pay__qr-img" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__wrapper">
+				<a href="/" class="footer__logo">
+					<img src="img/logo.svg" alt="logo" />
+				</a>
+				<nav class="footer__nav">
+					<ul class="list footer__list">
+						<li><a href="#">О фонде</a></li>
+						<li><a href="#">Цели и задачи</a></li>
+						<li><a href="#">Пресса о нас</a></li>
+					</ul>
+					<ul class="list footer__list">
+						<li><a href="#">Благодарности</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">Мероприятия</a></li>
+						<li><a href="#">Корпоративная газета</a></li>
+						<li><a href="#">Документы</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</nav>
+				<div class="footer__contacts">
+					<a href="tel:+78435610612" class="footer__tel">+7 843 561-06-12</a>
+					<a href="mailto:fond-happystories@mail.ru" class="footer__mail">fond-happystories@mail.ru</a>
+					<div class="footer__social">
+						<a href="#" target="_blank" class="footer__social-btn">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-vk"></use>
+							</svg>
+						</a>
+						<a href="#" target="_blank" class="footer__social-btn">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-tg"></use>
+							</svg>
+						</a>
+						<a href="#" target="_blank" class="footer__social-btn">
+							<svg>
+								<use xlink:href="img/icons/icons.svg#icon-rutube"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer__bottom">
+			<div class="container footer__bottom-container">
+				<div class="footer__copyright">© Счастливые истории, 2010–2024</div>
+				<a href="https://qorix.ru/" target="_blank" class="footer__dev">
+					<span>Разработка сайта —</span>
+					<img src="img/qorix.svg" alt="logo" />
+				</a>
+			</div>
+		</div>
+	</footer>
+	<script src="./files/js/swiper.min.js?_v=20250625142019"></script>
+	<script src="./files/js/fancybox.min.js?_v=20250625142019"></script>
+	<script src="js/app.min.js?_v=20250625142019"></script>
+</body>
+
+</html>

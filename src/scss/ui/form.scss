@@ -1,9 +1,101 @@
 .input-control {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  &._value {
+    .input {
+      padding-right: 40px;
+    }
+  }
+
+  &__value {
+    position: absolute;
+    right: 20px;
+    font-size: 22px;
+    line-height: 130%;
+    @include laptop-min {
+      font-size: 20px;
+    }
+    @include tablet {
+      font-size: 18px;
+    }
+  }
 }
 .input-check {
   display: none;
+
+  &:checked + .label-check {
+    &::before {
+      display: block;
+    }
+  }
 }
 .label-check {
+  @include flex-center;
+  cursor: pointer;
+  padding: 15px 19px;
+  border: 1px solid var(--wood);
+  border-radius: 12px;
+  background-color: var(--bg);
+
+  width: 100%;
+  font-size: 22px;
+  line-height: 130%;
+  text-align: center;
+
+  @include laptop-min {
+    font-size: 20px;
+  }
+  @include tablet {
+    font-size: 18px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    inset: 0;
+    border-radius: 12px;
+    border: 2px solid var(--primary);
+    display: none;
+  }
 }
 .input {
+  padding: 15px 19px;
+  border: 1px solid var(--wood);
+  border-radius: 12px;
+  background-color: var(--bg);
+
+  width: 100%;
+  font-size: 22px;
+  line-height: 130%;
+
+  @include laptop-min {
+    font-size: 20px;
+  }
+  @include tablet {
+    font-size: 18px;
+  }
+
+  &:focus {
+    outline: 2px solid var(--primary);
+  }
+
+  &[type="number"]::-webkit-inner-spin-button,
+  &[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  &[type="number"] {
+    -moz-appearance: textfield;
+  }
+
+  &::placeholder {
+    opacity: 0.5;
+  }
+}
+textarea.input-control {
+  resize: none;
 }

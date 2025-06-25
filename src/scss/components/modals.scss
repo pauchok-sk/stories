@@ -1,8 +1,17 @@
 .modal {
   width: 1200px !important;
-  max-width: calc(100% - 30px) !important;
+  max-width: calc(100% - 20px) !important;
   padding: 50px !important;
   border-radius: 40px;
+  display: none;
+  @include laptop-middle {
+    padding: 30px !important;
+    border-radius: 24px !important;
+  }
+  @include tablet-min {
+    padding: 30px 20px !important;
+    border-radius: 16px !important;
+  }
   &__close {
     position: absolute;
     cursor: pointer;
@@ -10,9 +19,14 @@
     right: 30px;
     width: 16px;
     height: 16px;
-    transition: color .2s ease;
+    transition: color 0.2s ease;
+    z-index: 1;
     @include hover {
       color: var(--primary);
+    }
+    @include laptop-min {
+      top: 15px;
+      right: 15px;
     }
 
     svg {
@@ -28,11 +42,25 @@
     text-transform: uppercase;
     text-align: center;
     margin: 0px 0px 20px 0px;
+
+    @include laptop-min {
+      font-size: 28px;
+    }
+    @include tablet {
+      font-size: 24px;
+    }
   }
   &__content {
     font-size: 24px;
     line-height: 130%;
     text-align: center;
     margin: 0;
+
+    @include laptop-min {
+      font-size: 20px;
+    }
+    @include tablet {
+      font-size: 18px;
+    }
   }
 }
